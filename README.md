@@ -48,4 +48,21 @@ We have unfreezed 20 layers from top layers and we keep the layer that has Batch
 #### Inception-ResNet 
 Instead of using a balanced class weight and data augmentation scenario. We tried to use balanced data for each class scenario. Then we implement Inception-ResNet architecture with unfreezed 14 layers from top layers and we keep the layer that has Batch Normalization. Then we built the top layers using Global Average Pooling and three hidden layers for the classifier.
 
+## Result in CodaLab
+| Model                  | Result       |
+| ---------------------- | ------------ |
+| Simple CNN Model       | 0.4433962264 |
+| Simple CNN Model + GAP | 0.5679245283 |
+| VGG16 No Fine Tuning   | 0.6396226415 |
+| VGG19                  | 0.720754717  |
+| EfficientNet B0        | 0.7339622642 |
+| Xception               | 0.8094339623 |
+| ResNet50               | 0.8509433962 |
+| ResNet V2              | 0.8301886792 |
+| Inception-ResNet       | 0.8867924528 |
+
+## Result in with our testing data
+![dataset](dataset_plot.png) 
+
+
 
